@@ -1,0 +1,11 @@
+body{
+  /*background-color: megenta; */
+  background-image: url('Assets/ElephantEar.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+
+}
