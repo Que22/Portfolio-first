@@ -1,0 +1,40 @@
+body{
+  background-color: lavender;
+  font-family: sans-serif;
+}
+
+
+#header{
+  background-color: #000;
+colo: #049993;
+padding: 12px;
+
+
+padding-left: 5px;
+}
+
+
+#nav ul li{
+  display: inline;
+list-style-type: none;
+}
+
+ul{
+  padding-left: 2px;
+}
+
+a{
+  color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+ color #000
