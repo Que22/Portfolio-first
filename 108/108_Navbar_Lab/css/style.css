@@ -8,20 +8,10 @@ nav {
 }
 
 #navbar1 {
+  display: flex;
   background-color: lightgreen;
   position: fixed;
   width:100%;
-}
-
-#navbar2 {
-  background-color: pink;
-  position:relative;
-  top: 150px;
-}
-#navbar3 {
-  background-color: skyblue;
-  position: absolute;
-  bottom: 150px;
 }
 
 li {
@@ -41,8 +31,18 @@ a{
 
 a:hover {
  color: white;
+ visibility: visible;
+ opacity: 0;
+ transition:
+ opacity 50s
+
 }
 
 a:active {
   text-decoration:  line-through;
 }
+
+@media only screen and (max-width: 768px) {
+ul {
+  flex-direction: row;
+  align-items: center;
