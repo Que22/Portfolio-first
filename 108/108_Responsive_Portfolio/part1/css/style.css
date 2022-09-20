@@ -62,9 +62,9 @@ grid-template-areas:
   ". threeCardsArea ."
   ". gallery1Area ."
   ". twoCardsArea ."
-  "footerArea footerArea footerArea.";
+  ". footerArea footerArea footerArea .";
 }
-nav{
+nav {
   grid-area: navArea;
 }
 #hero {
@@ -80,9 +80,9 @@ nav{
   grid-area: twoCardsArea;
 }
 footer {
-  grid-area: footerArea;
+  grid-area: footerArea
 }
-section {
+section{
   border: 4px solid indigo;
 }
 
@@ -167,5 +167,4 @@ nav h2 {
 }
  nav{
    flex-direction: column;
-  }
 }
