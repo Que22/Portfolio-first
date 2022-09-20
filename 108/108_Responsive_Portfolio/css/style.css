@@ -53,34 +53,34 @@ footer a:hover {
   Grid styles
 ****************************************************************************/
 #siteGrid {
-display: grid;
-grid-template-columns: 1fr 800px 1fr;
-grid-auto-rows: minmax(100px, auto);
-grid-template-areas:
-  "navArea navArea navArea"
-  "heroArea heroArea heroArea"
-  ". threeCardsArea ."
-  ". gallery1Area ."
-  ". twoCardsArea ."
-  ". footerArea footerArea footerArea .";
+  display: grid;
+  grid-template-columns: 1fr 1000px 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    "navArea navArea navArea"
+    ". heroArea heroArea heroArea"
+    ". threeCardsArea ."
+    ". galleryArea  ."
+    ". twoCardsArea ."
+    "footerArea footerArea footerArea";
 }
-nav {
+nav{
   grid-area: navArea;
 }
 #hero {
   grid-area: heroArea;
 }
 #threeCards {
-  grid-area: threeCardsArea;
+  grid-area: threeArea;
 }
 #gallery1 {
-  grid-area: gallery1Area;
+  grid-area: galleryArea;
 }
 #twoCards {
   grid-area: twoCardsArea;
 }
 footer {
-  grid-area: footerArea
+  grid-area: footerArea;
 }
 section{
   border: 4px solid indigo;
@@ -155,16 +155,17 @@ nav h2 {
   Media Query - Mobile Breakpoint
 ****************************************************************************/
 @media screen and (max-width: 1000px) {
-  #siteGrid {
-    grid-template-columns: 1fr;
-    grid-template-areas:
+#siteGrid {
+  grid-template-columns:
+  grid-template-areas:
     "navArea"
     "heroArea"
     "threeCardsArea"
-    "galleryArea"
-    "twocardsArea"
+    "gallery1Area"
+    "twoCardsArea"
     "footerArea";
-}
- nav{
+  }
+ nav {
    flex-direction: column;
+ }
 }
