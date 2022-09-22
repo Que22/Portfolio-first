@@ -60,7 +60,7 @@ footer a:hover {
     "navArea navArea navArea"
     "heroArea heroArea heroArea"
     ". threeCardsArea ."
-    ". galleryArea  ."
+    ". gallery1Area  ."
     ". twoCardsArea ."
     "footerArea footerArea footerArea";
 }
@@ -74,7 +74,7 @@ nav{
   grid-area: threeCardsArea;
 }
 #gallery1 {
-  grid-area: galleryArea;
+  grid-area: gallery1Area;
 }
 #twoCards {
   grid-area: twoCardsArea;
