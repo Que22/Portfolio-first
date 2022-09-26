@@ -41,7 +41,7 @@ a {
 nav,
 nav a,
 footer a {
-  color: indigo;
+  color: teal;
 }
 
 nav a:hover,
@@ -125,7 +125,7 @@ nav .socialMedia {
 nav,
 nav a,
 footer a {
-  color: indigo;
+  color: teal;
 }
 
 nav a:hover,
@@ -168,8 +168,8 @@ nav h2 {
 #hero a,
 .card a {
   background-color: white;
-  color: indigo;
-  border: 2px solid indigo;
+  color: teal;
+  border: 2px solid coral;
   border-radius: 24px;
   display: inline-block;
   padding: 8px 16px;
@@ -192,8 +192,8 @@ nav h2 {
 }
 
 .card {
-  border: 2px solid indigo;
-  color: indigo;
+  border: 2px solid coral;
+  color: coral;
   margin:48px 24px 24px;
   padding: 12px 12px 24px;
   text-align: center;
