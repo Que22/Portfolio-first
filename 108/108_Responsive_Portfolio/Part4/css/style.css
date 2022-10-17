@@ -77,7 +77,7 @@ nav{
 #gallery {
   grid-area: galleryArea;
 }
-#carouselArea {
+#carousel {
   grid-area: carouselArea;
 }
 #twoCards {
