@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-      <title>Assignment 22 - Bouncing Ball</title>
-      <style>
-        body {
-          margin: 0;
-        }
+    <title>Assignment 22 - Bouncing Ball</title>
+    <style>
         #room {
           border: 5px solid black;
           position: relative;
@@ -29,8 +26,8 @@
      <script type="text/javascript">
        let roomWidth = 600;
        let roomHeight = 500;
-       let ballWidth = 250;
-       let ballHeight = 250;
+       let ballWidth = 50;
+       let ballHeight = 50;
 
        let room = document.getElementById('room');
        room.style.width = roomWidth + 'px';
@@ -40,24 +37,13 @@
        ball.style.width = ballWidth + 'px';
        ball.style.height = ballHeight + 'px';
 
-       let ballX = 0;
        let ballY = 0;
-       let ballX = 3;
        let ballYSpeed = 0;
        let gravity = 0.3;
 
        function moveBall() {
-
          ballYSpeed += gravity;
          ballY += ballYSpeed;
-
-         if (ballX < 0 || ballX + ballWidth > roomWidth) {
-           if (ballX <0){
-             ballX = 0;
-           } else {
-
-           }
-
 
          if (ballY + ballHeight > roomHeight) {
            ballY = roomHeight - ballHeight;
@@ -65,6 +51,9 @@
          }
 
          ball.style.top = ballY + 'px';
+       }
+
+       setInterval(moveBall, 10);
      </script>
   </body>
 </html>
