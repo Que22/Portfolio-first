@@ -27,8 +27,8 @@
 
     <!-- Lightbox JavaScript -->
     <script type="text/javascript">
-     let lightboxContainer = document.getElementsById('lightboxContainer');
-     let lightbox = document.getElementsById('lightbox');
+     let lightboxContainer = document.getElementById('lightboxContainer');
+     let lightbox = document.getElementById('lightbox');
 
      let galleryImages = document.getElementsByClassName('galleryImage');
      for (let i = 0; i < galleryImages.length; i++) {
@@ -42,12 +42,12 @@
 
       let closers = document.getElementsByClassName('closer');
       for (let i = 0; i < closers.length; i++) {
-        let closer = closer[i];
-        closer.onclick =function() {
+        let closer = closers[i];
+        closer.onclick = function() {
           lightboxContainer.classList.remove("display");
           lightbox.src = "";
           lightbox.alt = "";
-        }; 
+        };
       }
     </script>
   </body>
