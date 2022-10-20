@@ -91,7 +91,7 @@ function playGame(yourPick) {
       this.classList.remove("animate");
     }
 
-    let closers = document.querySelectorAll("closer");
+    let closers = document.querySelectorAll(".closer");
     for (let i = 0; i < closers.length; i++) {
       let closer = closers[i];
       closer.onclick = function() {
