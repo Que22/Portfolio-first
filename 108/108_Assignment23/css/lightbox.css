@@ -12,14 +12,6 @@
   display: none;
   justify-content: center;
   align-items: center;
-  height: 100vh;
- position: fixed;
- left: 0px;
- top: 0px;
- padding: 24px;
- display: none;
- justify-content: center;
- align-items: center;
 }
 
 /*
@@ -88,9 +80,8 @@ When the lightbox container is given the 'display' class,
   }
   #lightbox {
     border: 12px solid white;
-    width: 80%;
+    width: 80%
     height: auto;
-  }
 }
 
 

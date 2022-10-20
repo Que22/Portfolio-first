@@ -3,6 +3,7 @@
   <head>
     <title>Assignment 23 - Lightbox Gallery</title>
     <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/lightbox.css">
   </head>
   <body>
     <!-- Gallery Code -->
@@ -26,10 +27,10 @@
 
     <!-- Lightbox JavaScript -->
     <script type="text/javascript">
-     let lightboxContainer = document.getElementById('lightboxContainer');
-     let lightbox = document.getElementById('lightbox');
+     let lightboxContainer = document.getElementsById('lightboxContainer');
+     let lightbox = document.getElementsById('lightbox');
 
-     let galleryImages = document.getElementByClassName('galleryImage');
+     let galleryImages = document.getElementsByClassName('galleryImage');
      for (let i = 0; i < galleryImages.length; i++) {
        let galleryImage = galleryImages[i];
        galleryImage.onclick = function() {
@@ -39,14 +40,14 @@
        };
      }
 
-      let closers = document.getElementByClassName('closer');
+      let closers = document.getElementsByClassName('closer');
       for (let i = 0; i < closers.length; i++) {
         let closer = closer[i];
         closer.onclick =function() {
           lightboxContainer.classList.remove("display");
           lightbox.src = "";
           lightbox.alt = "";
-        };
+        }; 
       }
     </script>
   </body>
