@@ -86,7 +86,7 @@ function playGame(yourPick) {
 }
 
   function setUp() {
-    let game = document.getElementById("result");
+    let game = document.getElementById("game");
     game.onanimationend = function() {
       this.classList.remove("animate");
     }
